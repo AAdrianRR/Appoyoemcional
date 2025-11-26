@@ -1,6 +1,6 @@
 # apoyo_emocional_ia_app
 
-# 🧠 ApoIA - Tu Compañero de Apoyo Emocional con IA
+# 🧠 Gaibu- Tu Compañero de Apoyo Emocional con IA
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.0%2B-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-3.0%2B-0175C2?style=for-the-badge&logo=dart&logoColor=white)
