@@ -117,10 +117,6 @@ class RiskService {
     };
   }
 
-  // -----------------------------------------------------------
-  // 📈 4. FUNCIÓN DE ANÁLISIS DE RECURRENCIA (NUEVO)
-  // -----------------------------------------------------------
-
   Future<void> _analyzeRecurrence(String userId, int lastScore) async {
     // 1. Calcular la fecha de hace 7 días
     final sevenDaysAgo =
@@ -165,9 +161,9 @@ class RiskService {
         'usuarioID': userId,
       }, SetOptions(merge: true));
       debugPrint(
-          '✅ Éxito: Recurrencia y Resumen actualizados. Score Final: $finalScore');
+          ' Éxito: Recurrencia y Resumen actualizados. Score Final: $finalScore');
     } catch (e) {
-      debugPrint('❌ ERROR DE FIREBASE (Análisis Recurrencia): $e');
+      debugPrint(' ERROR DE FIREBASE (Análisis Recurrencia): $e');
     }
   }
 
@@ -203,9 +199,9 @@ class RiskService {
       await FirebaseFirestore.instance
           .collection('mensajes_diario')
           .add(dataToWrite);
-      debugPrint('✅ Éxito: Mensaje de diario guardado.');
+      debugPrint(' Éxito: Mensaje de diario guardado.');
     } catch (e) {
-      debugPrint('❌ ERROR DE FIREBASE (Mensajes Diario): $e');
+      debugPrint(' ERROR DE FIREBASE (Mensajes Diario): $e');
     }
 
     // 4. Calcular la Recurrencia y actualizar el Resumen (Llamada a la función de recurrencia)

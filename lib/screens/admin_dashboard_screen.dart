@@ -8,7 +8,6 @@ class AdminDashboardScreen extends StatefulWidget {
 }
 
 class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
-  // SIMULACIÓN DE DATOS (Esto vendrá de tu Firebase después)
   final List<Map<String, dynamic>> patients = [
     {
       "name": "Usuario Anónimo #492",

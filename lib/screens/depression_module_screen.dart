@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:lottie/lottie.dart';
-import '../theme/depression_theme.dart'; // ⬅️ SOLO importa el tema de depresión
+import '../theme/depression_theme.dart'; //
 
 class GratitudeJournalScreen extends StatelessWidget {
   const GratitudeJournalScreen({super.key});
@@ -62,10 +62,6 @@ class _DepressionModuleScreenState extends State<DepressionModuleScreen> {
   bool get _isEmotionalComplete =>
       _emotionalTasks.every((task) => task.isCompleted);
 
-  // --------------------------------------------------------------------------
-  // 🎨 WIDGETS AUXILIARES (Usando DepressionTheme)
-  // --------------------------------------------------------------------------
-
   Widget _buildTaskItem(TaskItem task, int index) {
     return FadeInLeft(
       delay: Duration(milliseconds: 100 * index),
@@ -116,7 +112,6 @@ class _DepressionModuleScreenState extends State<DepressionModuleScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // ⚠️ USO DEL Scaffold Autónomo
     return DepressionTheme.scaffold(
       title: 'Módulo de Ánimo',
       body: SingleChildScrollView(
@@ -124,7 +119,6 @@ class _DepressionModuleScreenState extends State<DepressionModuleScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 🚀 ANIMACIÓN LOTTIE CENTRAL
             FadeInDown(
               child: Container(
                 height: 160,
@@ -183,7 +177,6 @@ class _DepressionModuleScreenState extends State<DepressionModuleScreen> {
                     ))
                 .toList(),
 
-            // ⚠️ SEPARADOR LIMPIO
             Container(
               height: 1,
               width: double.infinity,
@@ -191,7 +184,6 @@ class _DepressionModuleScreenState extends State<DepressionModuleScreen> {
               color: DepressionTheme.mutedForeground.withOpacity(0.2),
             ),
 
-            // --- SECCIÓN 2: Autocuidado ---
             Row(
               children: [
                 Text('Autocuidado Básico', style: DepressionTheme.h3),

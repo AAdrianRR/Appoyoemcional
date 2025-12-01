@@ -96,7 +96,7 @@ class _EmotionDetectorWrapperState extends State<EmotionDetectorWrapper> {
 
     if (mounted) {
       setState(() {
-        _debugStatus = "📸 Analizando...";
+        _debugStatus = " Analizando...";
         _statusColor = Colors.yellow;
       });
     }

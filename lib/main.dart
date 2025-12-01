@@ -6,7 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'firebase_options.dart';
 import 'theme/app_theme.dart';
 import 'screens/auth_screen.dart';
-import 'screens/main_dashboard_screen.dart';
+
 import 'screens/splash_screen.dart';
 import 'screens/initial_survey_screen.dart';
 
